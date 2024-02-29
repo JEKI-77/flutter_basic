@@ -45,9 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
       if (_counter >= myNrp.length) {
         _counter = 0;
         _bilanganGanjil = 1; 
-        _bilanganGenap = 0; // Reset _bilanganGenap to its initial value
+        _bilanganGenap = 0; 
         currentCharacter = "";
-        start = ""; // Reset start to its initial value
+        start = "";
       } else {
         if (_counter < myNrp.length) {
           currentCharacter +=
