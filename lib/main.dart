@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
         }
         _counter++;
         _bilanganGanjil += 2; 
-        _bilanganGenap += 2; // Update _bilanganGenap
+        _bilanganGenap += 2; 
       }
     });
   }
