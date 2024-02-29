@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
               myNrp[_counter]; 
         }
         _counter++;
-        _bilanganGanjil += 2; // Update _bilanganGanjil
+        _bilanganGanjil += 2; 
         _bilanganGenap += 2; // Update _bilanganGenap
       }
     });
