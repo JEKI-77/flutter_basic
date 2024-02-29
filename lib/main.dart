@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
       } else {
         if (_counter < myNrp.length) {
           currentCharacter +=
-              myNrp[_counter]; // Update currentCharacter based on counter
+              myNrp[_counter]; 
         }
         _counter++;
         _bilanganGanjil += 2; // Update _bilanganGanjil
