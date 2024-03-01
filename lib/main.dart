@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,12 +11,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter Basic',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter basic'),
+      home: const MyHomePage(title: 'Flutter'),
     );
   }
 }
@@ -43,18 +42,17 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       if (_counter >= myNrp.length) {
         _counter = 0;
-        _bilanganGanjil = 1; 
-        _bilanganGenap = 0; 
+        _bilanganGanjil = 1;
+        _bilanganGenap = 0;
         currentCharacter = "";
         start = "";
       } else {
         if (_counter < myNrp.length) {
-          currentCharacter +=
-              myNrp[_counter]; 
+          currentCharacter += myNrp[_counter];
         }
         _counter++;
-        _bilanganGanjil += 2; 
-        _bilanganGenap += 2; 
+        _bilanganGanjil += 2;
+        _bilanganGenap += 2;
       }
     });
   }
