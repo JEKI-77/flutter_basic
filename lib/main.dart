@@ -1,3 +1,5 @@
+import 'package:dart_basic/screen/home.screen.dart';
+import 'package:dart_basic/screen/perant.widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,10 +15,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter dsfdf'),
+          // colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple),
+          // Anda mungkin tidak perlu menggunakan useMaterial3 jika tidak memerlukannya
+          // useMaterial3: true,
+          ),
+      // body: const ParentWidget(),
+      home: const HomePage(),
     );
   }
 }
