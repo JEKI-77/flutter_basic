@@ -1,4 +1,5 @@
 import 'package:dart_basic/book.dart';
+import 'package:dart_basic/detail_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -46,7 +47,12 @@ class HomePage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   final book = listBook[index];
                   return GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => DetailPage(book: book)));
+                    },
                     child: Container(
                       width: double.infinity,
                       height: 90,
